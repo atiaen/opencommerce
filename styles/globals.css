@@ -1,0 +1,97 @@
+body {
+  /* box-sizing: border-box;
+  padding: 0; */
+  margin: 0;
+}
+
+.collapsedSidebar {
+  width: 76px;
+  transition: ease-in 0.3s;
+ 
+}
+
+.collapsedSidebarExpand {
+  width: 270px;  
+  transition: ease-out 0.5s;
+
+}
+
+.mainLayout {
+  width: calc(100vw - 15rem);
+  height: 100vh;
+  overflow: auto;
+  transform: translateX(15rem) !important;
+  transition: ease 0.5s;
+}
+
+
+
+.bodypos{
+  left: 0 !important;
+  top: 4rem !important;
+
+}
+
+.customWidth{
+  width: 100% !important;
+
+}
+
+@media screen and (min-width: 768px) {
+  .bodypos{
+    left: 15rem !important;
+    top: 4rem !important;
+  
+  }
+
+  .customWidth{
+    width: 82% !important;
+  
+  }
+  
+}
+
+.hideScrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer {
+  width: 90%;
+  transition: ease 0.2s;
+  height: calc(100vh - 4rem);
+  left: 15rem;
+  position: relative;
+}
+
+.no-border{
+  border: none !important;
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+ 
+.p-overlaypanel::before {
+  content:none;
+  margin-top: 0px;
+}
+.p-overlaypanel::after {
+  content:none;
+  margin-top: 0px;
+}
+
+.no-focus:focus{
+  box-shadow: none !important;
+}
+
+.link-no-color {
+  text-decoration: none;
+  color: black
+}
